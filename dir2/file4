@@ -1,0 +1,7 @@
+#!/bin/bash
+echo Enter a lowercase character
+read char
+case $char in
+[aeiou]) echo $char is a lowercase vowel ;;
+*) echo $char is not a lowercase vowel  ;;
+esac
