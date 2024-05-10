@@ -1,0 +1,21 @@
+#!/bin/bash
+echo enter the salary
+read salary
+if (( salary < 10000 ))
+then
+echo no tax
+elif (( salary > 10000 )) && (( salary < 25000 ))
+then
+tax=$((salary * 5 / 100))
+echo tax to be paid: $tax
+elif (( salary > 25000 )) && (( salary < 60000 ))
+then
+tax=$((salary * 10 / 100))
+echo tax to be paid: $tax
+elif ((salary > 60000 ))
+then
+tax=$((salary * 15 / 100))
+echo tax to be paid: $tax
+else
+echo invalid salary entered
+fi
