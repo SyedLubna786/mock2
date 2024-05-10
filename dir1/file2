@@ -1,0 +1,13 @@
+#!/bin/bash
+echo enter the choice
+read choice
+case $choice in
+1) echo monday. yes it is a day in a week ;;
+2) echo tuesday. yes it is a day in a week ;;
+3) echo wednesday. yes it is a day in a week ;;
+4) echo thursday. yes it is a day in a week ;;
+5) echo friday. yes it is a day in a week ;;
+6) echo saturday. yes it is a day in a week ;;
+7) echo sunday. yes it is a day in a week ;;
+*) echo invalid choice. please enter the choice between 1 to 7. ;;
+esac
